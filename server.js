@@ -9,7 +9,7 @@ const Students = require('./models/students');
 app.use(require('helmet')())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({origin:'https://minimalisticmerncrud.netlify.app/', credentials:true}));
+app.use(cors());
 
 app.get('/', async (req, res) => {
     try {
